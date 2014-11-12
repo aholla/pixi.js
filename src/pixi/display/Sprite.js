@@ -8,15 +8,9 @@
  * @class Sprite
  * @extends {PIXI.DisplayObjectContainer}
  * @constructor
-<<<<<<< HEAD
  * @param texture {PIXI.Texture} The texture for this sprite
  * 
  * A sprite can be created directly from an image like this : 
-=======
- * @param texture {Texture} The texture for this sprite
- *
- * A sprite can be created directly from an image like this :
->>>>>>> cfe3447e9213134867c39fc963eb02ed05ba413c
  * var sprite = new PIXI.Sprite.fromImage('assets/image.png');
  * yourStage.addChild(sprite);
  * then obviously don't forget to add it to the stage you have already created
@@ -249,11 +243,7 @@ PIXI.Sprite.prototype.getBounds = function(matrix)
 * Renders the object using the WebGL renderer
 *
 * @method _renderWebGL
-<<<<<<< HEAD
 * @param {RenderSession} renderSession
-=======
-* @param renderSession {RenderSession}
->>>>>>> cfe3447e9213134867c39fc963eb02ed05ba413c
 * @private
 */
 PIXI.Sprite.prototype._renderWebGL = function(renderSession)
@@ -316,11 +306,7 @@ PIXI.Sprite.prototype._renderWebGL = function(renderSession)
 * Renders the object using the Canvas renderer
 *
 * @method _renderCanvas
-<<<<<<< HEAD
 * @param {RenderSession} renderSession
-=======
-* @param renderSession {RenderSession}
->>>>>>> cfe3447e9213134867c39fc963eb02ed05ba413c
 * @private
 */
 PIXI.Sprite.prototype._renderCanvas = function(renderSession)
