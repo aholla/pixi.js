@@ -372,11 +372,12 @@ PIXI.WebGLRenderer.prototype.renderDisplayObject = function(displayObject, proje
  */
 PIXI.WebGLRenderer.prototype.resize = function(width, height)
 {
-    this.width = width * this.resolution;
-    this.height = height * this.resolution;
+    this.width = width// * this.resolution;
+    this.height = height// * this.resolution;
 
     this.view.width = this.width;
     this.view.height = this.height;
+
 
     this.gl.viewport(0, 0, this.width, this.height);
 
@@ -419,6 +420,8 @@ PIXI.WebGLRenderer.prototype.updateTexture = function(texture)
     }
 
     texture._dirty[gl.id] = false;
+
+    alert( this.width)
 
     return  texture._glTextures[gl.id];
 };
